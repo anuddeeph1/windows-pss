@@ -16,7 +16,7 @@ metadata:
       fields which make use of these host namespaces are unset or set to `false`.
     policies.nirmata.io/remediation: "NA"
 spec:
-  validationFailureAction: audit
+  validationFailureAction: enforce
   background: true
   rules:
     - name: host-namespaces
