@@ -15,7 +15,7 @@ metadata:
       ensures the fields spec.containers[*].securityContext.privileged and spec.initContainers[*].securityContext.windowsOptions.hostProcess must be unset or set to `false`.
     policies.nirmata.io/remediation: "NA"
 spec:
-  validationFailureAction: audit
+  validationFailureAction: enforce
   background: true
   rules:
     - name: hostprocess-containers
